@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <input type="text"  [(ngModel)]="task.name" class="form-control" name="name" placeholder="Task Name">
+            </div>
+            <div class="mb-3">
+                <textarea name="description" [(ngModel)]="task.desc" placeholder="Task Description" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <input type="number" [(ngModel)]="task.priority" class="form-control" name="priority" placeholder="Task Priority">
+            </div>
+            <div class="d-grid">
+                <button (click)="addTodo()" type="button" class="btn btn-success">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
